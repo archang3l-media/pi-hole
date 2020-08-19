@@ -25,6 +25,7 @@ readonly PI_HOLE_FILES_DIR="/etc/.pihole"
 # shellcheck disable=SC2034  # used in basic-install
 PH_TEST="true"
 source "${PI_HOLE_FILES_DIR}/automated install/basic-install.sh"
+useUpdateVars="true"
 
 coltable="/opt/pihole/COL_TABLE"
 if [[ -f ${coltable} ]]; then
